@@ -1,4 +1,3 @@
-import React, { useState, Suspense } from "react";
 import Tabs from "./Components/Tabs/Tabs.js";
 import "./App.css";
 import Accordion from "./Components/accordion/accordion";
