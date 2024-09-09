@@ -1,0 +1,41 @@
+.wrapper{
+    border:1px solid #ddd;
+    background-color: #fff;
+}
+
+.frame{
+    display:flex;
+    width: 20rem;
+    height: 20rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.left{
+    position: absolute;
+    right: 16rem;
+}
+.right{
+    position: absolute;
+    left:16rem;
+}
+.btn{
+    background-color: rgb(0,0,0,.1);
+    border:none;
+}
+.btn:focus{
+    border:none;
+    outline:none;
+}
+.circles{
+    position:absolute;
+    bottom:1rem;
+    background-color: rgb(0,0,0,.1);
+    padding:4px 10px;
+    border-radius: 5px;
+}
+.circle{
+    padding:5px;
+    cursor: pointer;
+}
