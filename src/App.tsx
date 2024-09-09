@@ -1,16 +1,16 @@
 import React, { useState, Suspense } from "react";
-import Tabs from "./Components/Tabs.js";
+import Tabs from "./Components/Tabs/Tabs.js";
 import "./App.css";
 import Accordion from "./Components/accordion/accordion";
-import Counter from "./Components/counter";
 import QRCodeGenerator from "./Components/qr-code-generator";
 import Slider from "./Components/slider/slider";
 import Stopwatch from "./Components/stopwatch";
 import TreeView from "./Components/treeview";
 import { menuList } from "./Components/treeview/menu";
+import Counter from "./Components/counter.js";
 
-const Photos = React.lazy(() => import("./Components/Photos.js"));
-const Comments = React.lazy(() => import("./Components/Comments.js"));
+const Photos = React.lazy(() => import("./Components/Tabs/Photos.js"));
+const Comments = React.lazy(() => import("./Components/Tabs/Comments.js"));
 
 export default function App() {
   const [tab, setTab] = useState("photos");
