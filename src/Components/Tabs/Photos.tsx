@@ -1,5 +1,5 @@
 function Photos() {
-  return <h1>PHOTOS</h1>;
+  return <p>Photos</p>;
 }
 
 export default Photos;

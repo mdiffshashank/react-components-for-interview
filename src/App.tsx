@@ -9,18 +9,7 @@ import TreeView from "./Components/treeview";
 import { menuList } from "./Components/treeview/menu";
 import Counter from "./Components/counter.js";
 
-const Photos = React.lazy(() => import("./Components/Tabs/Photos.js"));
-const Comments = React.lazy(() => import("./Components/Tabs/Comments.js"));
-
 export default function App() {
-  const [tab, setTab] = useState("photos");
-
-  const handleChange = (tab: string) => {
-    //startTransition(() => {
-    setTab(tab);
-    //});
-  };
-
   return (
     <div>
       <div className="app">
@@ -30,11 +19,8 @@ export default function App() {
         <Slider />
         <TreeView menuList={menuList} />
         <QRCodeGenerator />
+        <Tabs />
       </div>
-      <Tabs onTabSelect={handleChange} />
-      <Suspense fallback={<>{"...loading"}</>}>
-        {tab === "photos" ? <Photos /> : <Comments />}
-      </Suspense>
     </div>
   );
 }
