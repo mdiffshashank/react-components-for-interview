@@ -10,16 +10,14 @@ import Counter from "./Components/counter.js";
 
 export default function App() {
   return (
-    <div>
-      <div className="app">
-        <Counter />
-        <Accordion />
-        <Stopwatch />
-        <Slider />
-        <TreeView menuList={menuList} />
-        <QRCodeGenerator />
-        <Tabs />
-      </div>
+    <div className="app">
+      <Counter />
+      <Accordion />
+      <Stopwatch />
+      <Slider />
+      <TreeView menuList={menuList} />
+      <QRCodeGenerator />
+      <Tabs />
     </div>
   );
 }

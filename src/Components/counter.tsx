@@ -3,6 +3,7 @@ import Card from "./card/card";
 
 const Counter = () => {
   const [count, setCount] = useState(0);
+
   return (
     <Card>
       <h4>1- Counter </h4>
