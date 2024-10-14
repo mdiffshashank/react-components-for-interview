@@ -25,7 +25,7 @@ function Tabs() {
           onClick={() => handleChange("photos")}
         >
           Photos
-        </span>{" "}
+        </span>
         &nbsp;
         <span
           style={{
